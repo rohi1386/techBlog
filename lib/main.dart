@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 void main() {
   runApp(MainPage());
@@ -71,9 +72,22 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return Scaffold(body: SafeArea(child: Container(
-      child: Text("gdhehe"),
-    )));
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          width: 200,
+          height: 200,
+          color: Colors.white,
+          child:
+           const SpinKitThreeInOut(
+            color: Colors.amber,
+            size: 60.0,
+          ),
+
+        ),
+
+      ),
+    );
     throw UnimplementedError();
   }
 }
