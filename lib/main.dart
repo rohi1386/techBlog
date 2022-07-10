@@ -4,6 +4,8 @@ import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
+
+
 void main() {
   runApp(MainPage());
 }
@@ -68,21 +70,24 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
+
+
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          width: 200,
-          height: 200,
-          color: Colors.white,
-          child:
-           const SpinKitThreeInOut(
-            color: Colors.amber,
-            size: 60.0,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+
+
+
+            ],
           ),
+
 
         ),
 
