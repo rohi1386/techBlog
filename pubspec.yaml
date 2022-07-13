@@ -86,8 +86,12 @@ flutter:
   fonts:
     - family: IranSans
       fonts:
-        - asset: assets/fonts/IRANSansX-Bold.woff
-        - asset: assets/fonts/IRANSansX-Regular.woff
+        - asset: assets/fonts/IRANSansMobile.ttf
+        - asset: assets/fonts/IRANSansMobile_Black.ttf
+        - asset: assets/fonts/IRANSansMobile_Bold.ttf
+        - asset: assets/fonts/IRANSansMobile_Light.ttf
+        - asset: assets/fonts/IRANSansMobile_Medium.ttf
+        - asset: assets/fonts/IRANSansMobile_UltraLight.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
