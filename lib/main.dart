@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:techblog/splash_screen.dart';
 
 
 
@@ -11,17 +12,20 @@ void main() {
 }
 
 class MainPage extends StatefulWidget {
+
   const MainPage({
     Key? key,
   }) : super(key: key);
 
   @override
   State<MainPage> createState() => _MainPageState();
+
 }
 
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       // ignore: prefer_const_literals_to_create_immutables
       localizationsDelegates: [
@@ -56,43 +60,8 @@ class _MainPageState extends State<MainPage> {
       ),
 
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: splashScreen(),
     );
   }
 }
 
-class Home extends StatefulWidget {
-  Home({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-
-
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-    return SafeArea(
-      child: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-
-
-
-            ],
-          ),
-
-
-        ),
-
-      ),
-    );
-    throw UnimplementedError();
-  }
-}
