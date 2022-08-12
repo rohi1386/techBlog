@@ -20,7 +20,7 @@ class MainScreen extends StatelessWidget {
                     "assets/img/logo.png",
                     height: size.height / 13.6,
                   ),
-                  Icon(CupertinoIcons.search),
+                  const Icon(CupertinoIcons.search),
                 ],
               ),
 
